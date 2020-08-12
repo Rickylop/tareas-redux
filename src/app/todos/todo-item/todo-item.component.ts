@@ -45,6 +45,18 @@ export class TodoItemComponent implements OnInit {
 
   terminarEdicion(){
     this.editando = false;
+
+    if (this.txtInput.invalid) { return } //validar ingreso algun valor
+    if (this.txtInput.value === this.todo.texto) { return } //validar si cambio el texto
+
+    console.log('texto cambio');
+    
+    this.store.dispatch( 
+      actions.editar({
+        id: this.todo.id, 
+        texto: this.txtInput.value
+      }));      
+
   }
 
 }

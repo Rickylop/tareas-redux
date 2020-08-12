@@ -20,3 +20,9 @@ export const borrar = createAction(
     '[TODO] Borrar todo',
     props<{ id: number }>()
 );
+
+//cambia estado todas las tarea
+export const toogleAll = createAction(
+    '[TODO] ToogleAll todo',
+    props<{ completado: boolean }>()
+);

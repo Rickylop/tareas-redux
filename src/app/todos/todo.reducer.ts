@@ -3,7 +3,11 @@ import { crear } from './todo.actions';
 import { Todo } from './models/todo'
 
 export const initialState: Todo[] = [
-    new Todo('salvar al mundo')
+    new Todo('salvar al mundo'),
+    new Todo('salvar al mundo1'),
+    new Todo('salvar al mundo2'),
+    new Todo('salvar al mundo3'),
+
 ];
 
 const _todoReducer = createReducer(initialState,

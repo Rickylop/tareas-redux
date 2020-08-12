@@ -1,4 +1,3 @@
-import { crear } from './../todo.actions';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { AppState } from './../../app.reducer';

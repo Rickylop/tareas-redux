@@ -7,6 +7,6 @@ const _filtroReducer = createReducer(initialState,
   on(actions.setFiltro, (state, {filtro}) => filtro ),
 );
 
-export function counterReducer(state, action) {
+export function filtroReducer(state, action) {
   return _filtroReducer(state, action);
 }
